@@ -2,19 +2,23 @@
 import expression
 import reverse
 import homeade_stack
+import double_stack
+import min_stack
 
 swap = reverse.Reverse()
 tool = expression.Expression('(len)<dskfjlksdf[slfkjdsf]>')
 stack = homeade_stack.stack()
+double = double_stack.Double_Stack()
+minStack = min_stack.Min_Stack(10)
 
+minStack.push(3)
+minStack.push(4)
+minStack.push(5)
 
-stack.push(5)
-stack.push(2)
-stack.push(14)
-stack.push(33)
-stack.pop()
-stack.pop()
+minStack.print()
 
+minStack.pop()
 
-stack.print()
-print(stack.is_empty())
+minStack.print()
+
+print(minStack.min())
