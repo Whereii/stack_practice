@@ -18,7 +18,7 @@ class stack:
 
     def peek(self):
         if not self.array:
-            raise Exception('emptyArray')
+            raise Exception('illegalStateException')
         return self.array[0]
 
     def is_empty(self):
